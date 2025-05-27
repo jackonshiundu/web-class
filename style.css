@@ -1,0 +1,37 @@
+/* .parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  height: 40rem;
+  position: relative;
+}
+.parent p {
+  width: 10rem;
+  height: 5rem;
+  background-color: aqua;
+}
+
+.child1 {
+  order: 2;
+}
+.child12 {
+  order: 1;
+}
+.child3 {
+  order: 4;
+}
+.child4 {
+  order: 3;
+} */
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  border: 1px solid red;
+}
+.parent p {
+  border: 1px solid blue;
+}
